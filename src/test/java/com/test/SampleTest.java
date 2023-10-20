@@ -26,16 +26,19 @@ public class SampleTest
 		{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			System.out.println("opened chrome browser");
 			
 		} else if(System.getProperty("browser").equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			System.out.println("opened firefox browser");
 			
 		} else if(System.getProperty("browser").equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			System.out.println("opened edge browser");
 		}
 	  
 		
